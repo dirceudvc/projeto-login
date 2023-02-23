@@ -58,6 +58,7 @@ section#login > div#imagem {
 }
 
 section#login > div#formulario {
+    /* display block apenas por estrategia, nao entendi se vai usar mais tarde */
     display: block;
     padding: 10px;
 }
