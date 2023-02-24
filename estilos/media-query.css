@@ -9,16 +9,57 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px */
 
 /* versão para Tablet */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
     section#login {
-        width:  90vw;
+        /* ocupa 80% da largura da janela do navegador */
+        /* (w) de largura, se fosse vh, seria altura */
+        width: 80vw;
     }
 
     section#login > div#imagem {
+        /* imagem flutuar a esquerda */
         float: left;
+        /* largura de 30% da imagem */
+        width: 30%;
+        /* altura 100% da imagem */
+        height: 100%;
+    }
+
+    /* O formulario, é onde esta escrito Login, Seja bem vindo... */
+    section#login > div#formulario {
+        /* formulario flutuar a direita */
+        float: right;
+        /* largura 70% do formulario */
+        width: 70%;
+    }
+}    
+
+/* Versão para Desktop     */
+/* @media screen and (min-width: 992px) and (max-width: 1200px) { */
+@media screen and (min-width: 992px)
+{    
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#login {
+        width: 950px;
+    } 
+
+    section#login > div#imagem {
+        /* imagem flutar par esquerda */
+        float: left;
+        width: 50%;
+        height: 100%;
     }
 
     section#login > div#formulario {
         float: right;
+        width: 50%;
     }
 }
