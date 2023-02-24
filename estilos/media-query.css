@@ -11,6 +11,7 @@ Grandes telas: acima de 1200px */
 /* versão para Tablet */
 @media screen and (min-width: 768px) and (max-width: 992px)
 {
+    /* degradê para Tablet */
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
@@ -43,6 +44,7 @@ Grandes telas: acima de 1200px */
 /* @media screen and (min-width: 992px) and (max-width: 1200px) { */
 @media screen and (min-width: 992px)
 {    
+    /* degradê para Desktop */
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
