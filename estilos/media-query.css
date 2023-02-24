@@ -10,7 +10,7 @@ Grandes telas: acima de 1200px */
 
 /* versão para Tablet */
 /* @media screen and (min-width: 768px) and (max-width: 992px) */
-@media screen and (min-width: 1080px) and (max-width: 1304px)
+@media screen and (min-width: 769px) and (max-width: 1024px)
 {
     /* degradê para Tablet */
     body {
@@ -44,7 +44,7 @@ Grandes telas: acima de 1200px */
 /* Versão para Desktop     */
 /* @media screen and (min-width: 992px) and (max-width: 1200px) { */
 /* @media screen and (min-width: 992px) */
-@media screen and (min-width: 1304px) 
+@media screen and (min-width: 1025px) 
 {    
     /* degradê para Desktop */
     body {
