@@ -67,3 +67,15 @@ section#login > div#formulario {
     display: block;
     padding: 10px;
 }
+
+div#formulario > h1 {
+    /* centraliza o texto "Login" */
+    text-align: center;
+    /* margem abaixo do texto "login" */
+    margin-bottom: 10px ;
+}
+
+div#formulario > p {
+    /* tamanho da fonte Seja bem-vindo(a)... */
+    font-size: 0.8em;
+}

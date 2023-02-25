@@ -24,8 +24,8 @@ Grandes telas: acima de 1200px */
     }
 
     section#login > div#imagem {
-        /* imagem flutuar a esquerda */
-        float: left;
+        /* imagem flutuar a direita */
+        float: right;
         /* largura de 30% da imagem */
         width: 30%;
         /* altura 100% da imagem */
@@ -34,8 +34,8 @@ Grandes telas: acima de 1200px */
 
     /* O formulario, é onde esta escrito Login, Seja bem vindo... */
     section#login > div#formulario {
-        /* formulario flutuar a direita */
-        float: right;
+        /* formulario flutuar a esquerda */
+        float: left;
         /* largura 70% do formulario */
         width: 70%;
     } 
@@ -66,5 +66,14 @@ Grandes telas: acima de 1200px */
     section#login > div#formulario {
         float: right;
         width: 50%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        /* tamanho da fonte Seja bem-vindo(a)... */
+        font-size: 1.2em;
     }
 }
