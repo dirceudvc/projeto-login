@@ -41,6 +41,7 @@ section#login {
     overflow: hidden;
     /* fundo branco */
     background-color: white;
+    /* largura e altura da imagem */
     width: 250px;
     height: 500px;
     /* bordas arredondadas */
