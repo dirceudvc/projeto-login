@@ -39,11 +39,12 @@ section#login {
     transform: translate(-50%, -50%);
     /* tudo que tiver fora da borda, ficará escondido */
     overflow: hidden;
+
     /* fundo branco */
     background-color: white;
     /* largura e altura da imagem */
     width: 250px;
-    height: 500px;
+    height: 515px;
     /* bordas arredondadas */
     border-radius: 20px;
     /* sombra nas bordas */
@@ -81,6 +82,23 @@ div#formulario > p {
     font-size: 0.8em;
 }
 
+/* campo seu e-mail e sua senha */
+form > div.campo {
+    background-color: #5f2c82;
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    /* em cima e embaixo, com 5px e esquerda e direita 0px */
+    margin: 5px 0px;
+}
+
+/* tirar label email e senha */
+div.campo > label {
+    display: none;
+}
+
+
 /* botao Entrar */
 form > input[type=submit] {
     display: block;
@@ -109,5 +127,24 @@ form > a.botao {
     font-size: 1em;
     width: 100%;
     height: 40px;
+    padding-top: 5px;
+    /* para separar o botão Entrar do botão Esqueci a Senha */
+    margin-top: 5px;
+    background-color: white;
+    color: #2d6462;
+    border: 1px solid #49a09d;
+    border-radius: 7px;
+    /* tirar sublinhado */
+    text-decoration: none;
+}
+
+/* mudar cor do botão Esqueci a senha, quando passar o mouse */
+form > a.botao:hover {
     background-color: #6cd3cf;
+}
+
+/* icone do botão Esqueci a senha */
+form > a.botao > i {
+    /* tamanho da fonte */
+    font-size: 0.8em;
 }
