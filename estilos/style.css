@@ -36,7 +36,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     /* tudo que tiver fora da borda, ficará escondido */
     overflow: hidden;
 
@@ -49,6 +49,7 @@ section#login {
     border-radius: 20px;
     /* sombra nas bordas */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+    transform: translate(-50%, -50%);
     /* animação durante transição de tamanho de tela */
     transition: width 0.3s, height 0.3s;
     /* suaviza a animação */
@@ -85,19 +86,48 @@ div#formulario > p {
 /* campo seu e-mail e sua senha */
 form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     /* em cima e embaixo, com 5px e esquerda e direita 0px */
     margin: 5px 0px;
 }
 
-/* tirar label email e senha */
+/* esconder label email e senha */
 div.campo > label {
     display: none;
 }
 
+/* caixa seu e-mail e sua senha */
+div.campo > i {
+    /* icones brancos */
+    color: white;
+    /* background-color: black; */
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+/* campos que informar email e senha */
+div.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    /* calculo para encaixar input e-mail e senha*/
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    /* transform animação, sempre ultima linha, senao pode dar problema dispositivos moveis */
+    transform: translateY(-12px);
+}
+
+/* quando for informar email e senha o foco fica branco */
+div.campo > input:focus-within {
+    background-color: white;
+}
 
 /* botao Entrar */
 form > input[type=submit] {
