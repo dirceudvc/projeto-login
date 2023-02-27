@@ -80,3 +80,34 @@ div#formulario > p {
     /* tamanho da fonte Seja bem-vindo(a)... */
     font-size: 0.8em;
 }
+
+/* botao Entrar */
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    /* 100% do container, vw é do total */
+    width: 100%;
+    height: 40px;
+    background-color: #49a09d;
+    color: white;
+    /* sem borda */
+    border: none;
+    border-radius: 5px;
+    /* quando passar o mouse vira uma mãozinha */
+    cursor: pointer;
+}
+
+/* quando passar o mouse por cima */
+form > input[type=submit]:hover {
+    background-color: #2d6462;
+}
+
+/* link da classe botão */
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #6cd3cf;
+}
